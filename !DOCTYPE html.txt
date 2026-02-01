@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>سيرة عمر بن الخطاب رضي الله عنه</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- رابط ملف CSS الخارجي -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-shell text-slate-100">
+  <!-- كل محتوى HTML هنا -->
+  
+  <!-- رابط ملف JavaScript الخارجي -->
+  <script src="js/script.js"></script>
+</body>
+</html>
+2. css/styles.css (كل الـ CSS)
+css
+:root {
+  --bg-main: radial-gradient(circle at top left, #0f172a, #020617 55%, #000000 100%);
+  /* كل كود CSS هنا */
+}
+3. js/script.js (كل الـ JavaScript)
+javascript
+// كل كود JavaScript هنا
+document.addEventListener('DOMContentLoaded', function() {
+  // كل الوظائف
+});
+الاختيار لديك:
+الخيار 1: السهل ✅
+استخدم الكود كما هو (كل شيء في ملف واحد)
+
+يحفظ باسم index.html
+
+يعمل مباشرة
+
+الخيار 2: المنظم ✅
+افصل الكود إلى 3 ملفات
+
+يحتاج إلى مجلدات css و js
+
+لتبدأ فورًا:
+انسخ الكود كاملاً
+
+احفظه كـ index.html
+
+افتحه في المتصفح
+
+سأعمل فوراً! ✨
+
+هل تريدني:
+
+أن أعطيك الكود مفصولاً في 3 ملفات؟
+
+أم تبدأ بهذا الملف الواحد أولاً؟
+
+zid elkolet aalih wmedli elcode maa baathou bech najem naamlou copier coller
+كامل الكود جاهز للنسخ واللصق!
+الملف 1: index.html (نسخ هذا كاملاً)
+html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>سيرة عمر بن الخطاب رضي الله عنه - الفاروق</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="سيرة كاملة للخليفة الراشد الثاني عمر بن الخطاب رضي الله عنه - نموذج العدل والقيادة الإسلامية">
+  <meta name="keywords" content="عمر بن الخطاب, الفاروق, سيرة الصحابة, الخلافة الراشدة, العدل الإسلامي, تاريخ الإسلام">
+  <meta name="author" content="موقع السيرة النبوية">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+</head>
+
+<body class="page-shell text-slate-100">
+  <!-- Reading Progress -->
+  <div class="reading-indicator">
+    <div id="readingBar" class="reading-indicator-bar"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="fixed top-0 inset-x-0 z-40 nav-blur">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-4">
+      <div class="flex items-center gap-3">
+        <div class="pill px-3 py-1.5 flex items-center gap-2">
+          <div class="h-7 w-7 rounded-full bg-sky-500/10 flex items-center justify-center border border-sky-400/70 shadow-md shadow-sky-500/35">
+            <span class="text-sky-300 text-xl font-semibold">ع</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-xs text-slate-300/80">سِيَرُ الْخُلَفَاءِ</span>
+            <span class="text-[0.8rem] font-semibold text-sky-100">عُمَرُ بْنُ الْخَطَّابِ</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hidden md:flex items-center gap-5 text-sm">
+        <a href="#intro" class="nav-link active">البداية</a>
+        <a href="#stands" class="nav-link">مواقف حاسمة</a>
+        <a href="#justice" class="nav-link">العدل والمال</a>
+        <a href="#leadership" class="nav-link">الحكمة والقيادة</a>
+        <a href="#personal" class="nav-link">الحياة الخاصة</a>
+        <a href="#resources" class="nav-link">مراجع</a>
+      </div>
+      
+      <div class="flex items-center gap-3">
+        <button id="themeToggle" class="btn-ghost hidden sm:inline-flex items-center gap-2 text-xs">
+          <span id="themeIcon" class="text-amber-200">☾</span>
+          <span id="themeLabel">وضع القراءة الليلي</span>
+        </button>
+        
+        <!-- Mobile menu button -->
+        <button id="mobileMenuBtn" class="md:hidden inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-500/70 bg-slate-900/60 text-slate-100 shadow-lg shadow-slate-900/80">
+          <svg id="mobileMenuIconOpen" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="mobileMenuIconClose" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+    
+    <!-- Mobile nav panel -->
+    <div id="mobileNavPanel" class="md:hidden px-4 pb-3 hidden">
+      <div class="mobile-nav-panel px-4 py-3">
+        <div class="flex flex-wrap gap-2 text-xs mb-2 text-slate-400/90">
+          <span class="badge-soft">سيرة</span>
+          <span class="badge-soft">خلافة راشدة</span>
+          <span class="badge-soft">عدالة</span>
+        </div>
+        <div class="flex flex-col gap-1 text-sm">
+          <a href="#intro" class="nav-link block py-1.5">البداية</a>
+          <a href="#stands" class="nav-link block py-1.5">مواقف حاسمة</a>
+          <a href="#justice" class="nav-link block py-1.5">العدل والمال</a>
+          <a href="#leadership" class="nav-link block py-1.5">الحكمة والقيادة</a>
+          <a href="#personal" class="nav-link block py-1.5">الحياة الخاصة</a>
+          <a href="#resources" class="nav-link block py-1.5">مراجع</a>
+        </div>
+        <button id="themeToggleMobile" class="btn-ghost w-full mt-3 flex items-center justify-center gap-2 text-xs">
+          <span id="themeIconMobile" class="text-amber-200">☾</span>
+          <span id="themeLabelMobile">وضع القراءة الليلي</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="pt-24 sm:pt-28 pb-16 sm:pb-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-4">
+      <!-- Hero Section -->
+      <section id="intro" class="section-anchor hero-grid grid gap-10 lg:grid-cols-[minmax(0,1.65fr)_minmax(0,1.1fr)] items-center mb-14 sm:mb-20">
+        <div class="fade-in-up visible">
+          <div class="inline-flex items-center gap-3 mb-4 pill px-3.5 pr-4 py-1.5">
+            <span class="flex h-7 w-7 items-center justify-center rounded-full bg-emerald-500/15 border border-emerald-400/70 text-emerald-200 text-sm shadow shadow-emerald-500/40">
+              ﷺ
+            </span>
+            <div class="flex flex-col text-[0.72rem] text-slate-200">
+              <span>سيرة عمر بن الخطاب رضي الله عنه</span>
+              <span class="text-sky-200/95">العدل، الشجاعة، الرحمة، والحكمة في القيادة</span>
+            </div>
+          </div>
+          
+          <h1 class="mt-1 mb-4 text-3xl sm:text-4xl lg:text-[2.6rem] font-bold leading-relaxed gradient-text">
+            نموذج الخلافة الراشدة: عُمَرُ بْنُ الْخَطَّابِ رَضِيَ اللَّهُ عَنْهُ
+          </h1>
+          
+          <p class="text-sm sm:text-base leading-8 text-slate-200/90">
+            وُلِدَ عُمَرُ بْنُ الْخَطَّابِ رَضِيَ اللَّهُ عَنْهُ شَامِخًا بَيْنَ قَوْمِهِ، فَجَمَعَ بَيْنَ الشَّجَاعَةِ وَالْحِكْمَةِ،
+            وَبَيْنَ الْحَزْمِ وَالرَّحْمَةِ، فَكَانَ قُدْوَةً فِي الْقِيَادَةِ وَالْعَدْلِ وَتَقْدِيمِ رِضَا اللَّهِ عَلَى كُلِّ اعْتِبَارٍ.
+          </p>
+          
+          <div class="mt-6 flex flex-wrap items-center gap-3">
+            <button class="btn-primary flex items-center gap-2 text-sm" onclick="document.getElementById('stands').scrollIntoView({behavior:'smooth'})">
+              قراءة المواقف الحاسمة
+              <span class="text-base">↓</span>
+            </button>
+            <button class="btn-ghost flex items-center gap-2 text-xs sm:text-sm" onclick="document.getElementById('justice').scrollIntoView({behavior:'smooth'})">
+              مسار العدل والمال العام
+            </button>
+            <div class="flex items-center gap-2 text-[0.7rem] text-slate-300/80 mt-1">
+              <span class="inline-flex h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_10px_2px_rgba(52,211,153,0.85)]"></span>
+              <span>نص عربي مُحَسَّن لِوَضْعِ الْقِرَاءَةِ</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Side Card -->
+        <aside class="glass-card p-5 sm:p-6 fade-in-up visible">
+          <div class="flex items-start justify-between gap-3 mb-4">
+            <div>
+              <h2 class="text-lg sm:text-xl font-semibold text-slate-50 mb-1">ملامح شخصية عمر رضي الله عنه</h2>
+              <p class="text-xs sm:text-sm text-slate-300 leading-6">
+                خلاصة مركزة تُظهِر توازن شخصيته بين الحزم والرحمة، والقوة والخشية.
+              </p>
+            </div>
+            <div class="floating-badge chip border-emerald-400/80 bg-emerald-500/10 text-[0.7rem]">
+              قدوة خالدة
+            </div>
+          </div>
+          
+          <div class="grid grid-cols-2 gap-3 text-xs sm:text-sm">
+            <div class="quote-card p-3 sm:p-3.5">
+              <div class="flex items-center justify-between mb-1.5">
+                <span class="chip text-[0.65rem] border-sky-400/70 bg-sky-500/10">القلب والغيرة</span>
+              </div>
+              <p class="leading-6 text-slate-100/95 text-[0.78rem] sm:text-[0.8rem]">
+                مُتَوَقِّدٌ بِالْغَيْرَةِ عَلَى دِينِ اللَّهِ، شَدِيدٌ فِي الْحَقِّ، لَا يَرْضَى بِالْبَاطِلِ، مَعَ خُضُوعٍ تَامٍّ لِحُكْمِ اللَّهِ وَرِضَاهُ.
+              </p>
+            </div>
+            
+            <div class="quote-card p-3 sm:p-3.5">
+              <div class="flex items-center justify-between mb-1.5">
+                <span class="chip text-[0.65rem] border-amber-400/70 bg-amber-500/10">القيادة والعدل</span>
+              </div>
+              <p class="leading-6 text-slate-100/95 text-[0.78rem] sm:text-[0.8rem]">
+                حَازِمٌ فِي الْقَرَارِ، رَحِيمٌ فِي التَّطْبِيقِ، يَحْفَظُ الدِّمَاءَ، وَيُقَدِّمُ الْمَصْلَحَةَ الْعَامَّةَ عَلَى كُلِّ مَنْصِبٍ أَوْ شَخْصٍ.
+              </p>
+            </div>
+          </div>
+          
+          <div class="mt-4 pt-3 border-t border-slate-700/80 flex flex-wrap items-center justify-between gap-2 text-[0.75rem] text-slate-300/90">
+            <div class="flex flex-wrap gap-2">
+              <span class="chip">عدالة</span>
+              <span class="chip">قوة في الحق</span>
+              <span class="chip">رحمة وحكمة</span>
+            </div>
+            <span class="text-sky-200/95">سيرة ملهمة لكل قائد ومربٍّ</span>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Stands Section -->
+      <section id="stands" class="section-anchor mb-14 sm:mb-20 fade-in-up">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-5">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-semibold text-slate-50 mb-1">مواقف حاسمة في نصرة الحق</h2>
+            <p class="text-sm sm:text-base text-slate-300">
+              مَشَاهِدُ تُجَسِّدُ انْتِصَارَهُ لِدِينِ اللَّهِ، وَتَزَاوُجَ الشِّدَّةِ فِي الْحَقِّ مَعَ الرَّحْمَةِ فِي التَّطْبِيقِ.
+            </p>
+          </div>
+          <div class="flex items-center gap-2 text-xs text-slate-300">
+            <span class="badge-soft">غزوات</span>
+            <span class="badge-soft">مواقف مع النبي ﷺ</span>
+          </div>
+        </div>
+
+        <div class="grid gap-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1.1fr)]">
+          <!-- Timeline -->
+          <div class="glass-card p-5 sm:p-6">
+            <div class="relative">
+              <div class="absolute inset-y-3 right-4 w-px timeline-line opacity-70"></div>
+              <div class="space-y-5">
+                <!-- حاطب -->
+                <div class="relative pl-0 pr-10">
+                  <div class="absolute -right-[7px] top-2 h-3.5 w-3.5 rounded-full border border-sky-400 bg-slate-950 shadow-[0_0_0_4px_rgba(56,189,248,0.2)]"></div>
+                  <h3 class="font-semibold text-slate-50 mb-1 text-base">موقف حاطب رضي الله عنه والجاسوسية</h3>
+                  <p class="text-[0.85rem] sm:text-[0.9rem] leading-7 text-slate-200/90">
+                    عِنْدَمَا اكْتُشِفَ أَمْرُ حَاطِبٍ بِالْجَاسُوسِيَّةِ، امْتَلَأَ قَلْبُ عُمَرَ رَضِيَ اللَّهُ عَنْهُ غَضَبًا، وَأَرَادَ الْقِصَاصَ،
+                    وَلَكِنَّهُ تَوَقَّفَ حِينَ سَمِعَ تَوْجِيهَ النَّبِيِّ ﷺ، فَعَرَفَ أَنَّ الرَّحْمَةَ فِي هَذَا الْمَوْطِنِ أَعْظَمُ عِوَضًا عِنْدَ اللَّهِ،
+                    فَانْحَنَى أَمَامَ حُكْمِ اللَّهِ، وَبَكَى خَشْيَةً وَإِيمَانًا.
+                  </p>
+                  <div class="mt-2 flex flex-wrap gap-2 text-[0.72rem] text-slate-300">
+                    <span class="chip border-sky-400/70 bg-sky-500/10">تقديم حكم الله</span>
+                    <span class="chip border-emerald-400/70 bg-emerald-500/10">غلبة الرحمة</span>
+                  </div>
+                </div>
+                
+                <!-- مر الظهران -->
+                <div class="relative pl-0 pr-10">
+                  <div class="absolute -right-[7px] top-2 h-3.5 w-3.5 rounded-full border border-emerald-400 bg-slate-950 shadow-[0_0_0_4px_rgba(52,211,153,0.2)]"></div>
+                  <h3 class="font-semibold text-slate-50 mb-1 text-base">مَرُّ الظَّهْرَانِ وأبو سفيان</h3>
+                  <p class="text-[0.85rem] sm:text-[0.9rem] leading-7 text-slate-200/90">
+                    حِينَ خَشِيَ أَبُو سُفْيَانَ عَلَى نَفْسِهِ، كَانَ عُمَرُ عَلَى وَشْكِ إِقَامَةِ الْقِصَاصِ، ثُمَّ رَجَعَ لِلنَّبِيِّ ﷺ وَاسْتَشَارَهُ،
+                    فَدَلَّهُ عَلَى الرَّحْمَةِ، فَحَفِظَ الدِّمَاءَ، وَأَثْبَتَ أَنَّ الْعَدْلَ يَحْتَاجُ إِلَى حِكْمَةٍ تُوَجِّهُهُ وَلَا يَنْفَصِلُ عَنِ الرَّحْمَةِ.
+                  </p>
+                  <div class="mt-2 flex flex-wrap gap-2 text-[0.72rem] text-slate-300">
+                    <span class="chip border-emerald-400/70 bg-emerald-500/10">استشارة النبي ﷺ</span>
+                    <span class="chip border-slate-500/80 bg-slate-800/80">حفظ الدماء</span>
+                  </div>
+                </div>
+                
+                <!-- حنين -->
+                <div class="relative pl-0 pr-10">
+                  <div class="absolute -right-[7px] top-2 h-3.5 w-3.5 rounded-full border-amber-400 border bg-slate-950 shadow-[0_0_0_4px_rgba(250,204,21,0.18)]"></div>
+                  <h3 class="font-semibold text-slate-50 mb-1 text-base">ثباته في غزوة حنين</h3>
+                  <p class="text-[0.85rem] sm:text-[0.9rem] leading-7 text-slate-200/90">
+                    فِي غَزْوَةِ حُنَيْنٍ حِينَ ارْتَبَكَ كَثِيرٌ مِنَ الْمُسْلِمِينَ وَانْهَارُوا أَمَامَ الْمُشْرِكِينَ، بَقِيَ عُمَرُ رَضِيَ اللَّهُ عَنْهُ
+                    ثَابِتًا بِجَانِبِ النَّبِيِّ ﷺ، يُثَبِّتُ الْقِلَّةَ الصَّامِدَةَ، وَيُشَارِكُ فِي الْقِتَالِ، ثُمَّ يُسَاهِمُ فِي تَقْسِيمِ الْغَنَائِمِ وَالْمَالِ
+                    بِعَدْلٍ وَتَوَاضُعٍ، خَالِصًا لِوَجْهِ اللَّهِ تَعَالَى.
+                  </p>
+                  <div class="mt-2 flex flex-wrap gap-2 text-[0.72rem] text-slate-300">
+                    <span class="chip border-amber-400/70 bg-amber-500/10">ثبات عند الاختبار</span>
+                    <span class="chip border-emerald-400/70 bg-emerald-500/10">عدل في الغنائم</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion for Deep Reading -->
+          <div class="space-y-4">
+            <div class="accordion-item" data-acc>
+              <button class="w-full flex items-center justify-between gap-3 px-4 py-3 sm:px-5 sm:py-3.5 text-right">
+                <div class="flex flex-col text-sm sm:text-[0.95rem]">
+                  <span class="font-semibold text-slate-50">ما الذي يميز شدة عمر رضي الله عنه؟</span>
+                  <span class="text-[0.8rem] text-slate-300/90 mt-0.5">شدة منضبطة بهدي الوحي وتوجيه النبي ﷺ</span>
+                </div>
+                <span class="text-sky-300 text-xl flex-shrink-0 rotate-0 transition-transform duration-200" data-acc-icon>+</span>
+              </button>
+              <div class="accordion-body px-4 pb-3 sm:px-5 sm:pb-4 text-[0.85rem] leading-7 text-slate-200">
+                لَمْ تَكُنْ شِدَّتُهُ فِي نَفْسِهِ أَوْ لِحَظِّ دُنْيَا، بَلْ شِدَّةٌ فِي نُصْرَةِ الْحَقِّ، مَقْرُونَةٌ بِالِاسْتِجَابَةِ الْفَوْرِيَّةِ
+                لِتَوْجِيهِ النَّبِيِّ ﷺ. فَكُلَّمَا بَيَّنَ لَهُ الرَّسُولُ وَجْهَ الرَّحْمَةِ أَوِ الْحِكْمَةِ فِي مَوْطِنٍ مَا، انْقَادَ لِذَلِكَ
+                بِقَلْبٍ خَاشِعٍ، مُسْتَحْضِرًا أَنَّ رِضَا اللَّهِ فَوْقَ كُلِّ شَيْءٍ.
+              </div>
+            </div>
+
+            <div class="accordion-item" data-acc>
+              <button class="w-full flex items-center justify-between gap-3 px-4 py-3 sm:px-5 sm:py-3.5 text-right">
+                <div class="flex flex-col text-sm sm:text-[0.95rem]">
+                  <span class="font-semibold text-slate-50">كيف جمع بين الشجاعة والرحمة؟</span>
+                  <span class="text-[0.8rem] text-slate-300/90 mt-0.5">قوة في الميدان، ولين ورحمة عند الحكم والقضاء</span>
+                </div>
+                <span class="text-sky-300 text-xl flex-shrink-0 rotate-0 transition-transform duration-200" data-acc-icon>+</span>
+              </button>
+              <div class="accordion-body px-4 pb-3 sm:px-5 sm:pb-4 text-[0.85rem] leading-7 text-slate-200">
+                كَانَ شُجَاعًا فِي الْقِتَالِ وَالْمَوَاقِفِ الْحَاسِمَةِ، وَفِي نَفْسِ الْوَقْتِ رَحِيمًا حِينَ يَتَعَلَّقُ الْأَمْرُ بِالْحُكْمِ
+                عَلَى النَّاسِ أَوْ بِالْمَصَالِحِ الْعَامَّةِ؛ فَيَقِفُ مَعَ الضَّعِيفِ، وَيُقَدِّرُ ظُرُوفَ النَّاسِ، وَلَا يَنْسَى أَبَدًا أَنَّهُ
+                مَسْؤُولٌ بَيْنَ يَدَيِ اللَّهِ تَعَالَى.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Justice & Public Wealth -->
+      <section id="justice" class="section-anchor mb-14 sm:mb-20 fade-in-up">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-5">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-semibold text-slate-50 mb-1">العدل والمال العام</h2>
+            <p class="text-sm sm:text-base text-slate-300">
+              سِيَاسَةٌ قَائِمَةٌ عَلَى الْمُرَاقَبَةِ الذَّاتِيَّةِ، وَحِفْظِ حُقُوقِ النَّاسِ، وَصِيَانَةِ بَيْتِ الْمَالِ.
+            </p>
+          </div>
+          <span class="badge-soft text-xs">نموذج في النزاهة والشفافية</span>
+        </div>
+
+        <div class="grid gap-6 lg:grid-cols-3">
+          <!-- Card 1 -->
+          <article class="glass-card p-5 sm:p-6 flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-semibold mb-2 text-slate-50">مراقبة النفس والأهل</h3>
+              <p class="text-[0.88rem] sm:text-[0.9rem] leading-7 text-slate-200">
+                لَمْ يَقْتَصِرْ عَدْلُهُ عَلَى النَّاسِ فَقَطْ، بَلْ بَدَأَ بِنَفْسِهِ وَأَهْلِهِ، فَكَانَ يُراقِبُ مَا يَدْخُلُ عَلَيْهِمْ مِنْ أَمْوَالٍ
+                أَوْ مَنَافِعَ، وَلَا يَرْضَى أَنْ يَسْتَغِلَّ أَحَدٌ مَكَانَتَهُ أَوْ قُرْبَهُ مِنْهُ لِظُلْمٍ أَوْ مَنْفَعَةٍ غَيْرِ مَشْرُوعَةٍ.
+              </p>
+            </div>
+            <div class="mt-3 pt-3 border-t border-slate-700/80 text-[0.8rem] text-slate-300 flex flex-wrap gap-2">
+              <span class="chip">البدء بالنفس</span>
+              <span class="chip">مسؤولية الأسرة</span>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="glass-card p-5 sm:p-6 flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-semibold mb-2 text-slate-50">حفظ المال العام</h3>
+              <p class="text-[0.88rem] sm:text-[0.9rem] leading-7 text-slate-200">
+                كَانَ حَرِيصًا عَلَى أَنْ يُرَدَّ كُلُّ مَالٍ لَا يَكُونُ مَشْرُوعًا إِلَى بَيْتِ الْمَالِ، وَأَنْ تُقْسَمَ الْغَنَائِمُ وَالْأَمْوَالُ
+                بَيْنَ النَّاسِ بِالْحَقِّ، لَا فَرْقَ عِنْدَهُ بَيْنَ قَرِيبٍ وَبَعِيدٍ، وَلَا بَيْنَ كَبِيرٍ وَصَغِيرٍ؛ فَالْمِيزَانُ عِنْدَهُ هُوَ رِضَا اللَّهِ.
+              </p>
+            </div>
+            <div class="mt-3 pt-3 border-t border-slate-700/80 text-[0.8rem] text-slate-300 flex flex-wrap gap-2">
+              <span class="chip">صيانة بيت المال</span>
+              <span class="chip">مساواة بين الناس</span>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="glass-card p-5 sm:p-6 flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-semibold mb-2 text-slate-50">روح العدل في كل تصرف</h3>
+              <p class="text-[0.88rem] sm:text-[0.9rem] leading-7 text-slate-200">
+                ظَهَرَ حِرْصُهُ عَلَى رِضَا اللَّهِ فِي كُلِّ تَصَرُّفٍ؛ فَلَا يَرْضَى أَنْ يُظْلَمَ أَحَدٌ، وَلَا أَنْ يُقَدَّمَ أَحَدٌ لِهَوًى
+                أَوْ لِمَصْلَحَةٍ عَارِضَةٍ، بَلْ كَانَ الْمِعْيَارُ عِنْدَهُ الْحَقُّ وَالْعَدْلُ، مَعَ خَوْفٍ دَائِمٍ مِنَ السُّؤَالِ يَوْمَ الْقِيَامَةِ.
+              </p>
+            </div>
+            <div class="mt-3 pt-3 border-t border-slate-700/80 text-[0.8rem] text-slate-300 flex flex-wrap gap-2">
+              <span class="chip">خوف من الآخرة</span>
+              <span class="chip">عدالة شاملة</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Leadership & Wisdom -->
+      <section id="leadership" class="section-anchor mb-14 sm:mb-20 fade-in-up">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-5">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-semibold text-slate-50 mb-1">الحكمة والقيادة</h2>
+            <p class="text-sm sm:text-base text-slate-300">
+              قِيَادَةٌ تَجْمَعُ بَيْنَ الْحَزْمِ وَالتَّرَوِّي، وَبَيْنَ تَوْطِيدِ الْحَقِّ وَتَجَنُّبِ الْفِتْنَةِ.
+            </p>
+          </div>
+          <span class="badge-soft text-xs">إدارة دولة وأمة</span>
+        </div>
+
+        <div class="grid gap-6 lg:grid-cols-[minmax(0,1.5fr)_minmax(0,1.1fr)]">
+          <div class="glass-card p-5 sm:p-6">
+            <h3 class="text-lg font-semibold mb-3 text-slate-50">ضبط الفتنة بعد مرض النبي ﷺ ووفاته</h3>
+            <p class="text-[0.9rem] leading-7 text-slate-200 mb-3">
+              عِنْدَمَا مَرِضَ النَّبِيُّ ﷺ وَاقْتَرَبَ أَجَلُهُ، كَانَ عُمَرُ رَضِيَ اللَّهُ عَنْهُ حَرِيصًا عَلَى أَنْ لَا تَقَعَ فِتْنَةٌ
+              بَيْنَ الْمُسْلِمِينَ، فَخَشِيَ أَنْ يَكُونَ فِي بَعْضِ الْأَقْوَالِ أَوِ التَّوْصِيَاتِ مَا يُفْتَنُ بِهِ بَعْضُ النَّاسِ.
+            </p>
+            <p class="text-[0.9rem] leading-7 text-slate-200 mb-3">
+              وَعِنْدَ وَفَاةِ النَّبِيِّ ﷺ، ثَبَتَ مَعَ أَبِي بَكْرٍ رَضِيَ اللَّهُ عَنْهُ فِي تَبْيِينِ الْحَقِّ لِلنَّاسِ،
+              وَتَأْكِيدِ أَنَّ الْعِبَادَةَ لِلَّهِ وَحْدَهُ، وَأَنَّ رِسَالَةَ النَّبِيِّ ﷺ قَدْ أَكْمَلَهَا اللَّهُ، فَكَانَ ذَلِكَ مِنْ أَعْظَمِ
+              مَوَاقِفِهِ فِي حِفْظِ عَقِيدَةِ التَّوْحِيدِ وَجَمْعِ الْقُلُوبِ عَلَى الْحَقِّ.
+            </p>
+            <p class="text-[0.9rem] leading-7 text-slate-200">
+              ثُمَّ بَرَزَتْ حِكْمَتُهُ فِي إِدَارَةِ شُؤُونِ الدَّوْلَةِ، وَالْحِرْصِ عَلَى اخْتِيَارِ الْقَادَةِ الْأَصْلَحِ، وَعَزْلِ
+              مَنْ يَرَى أَنَّ فِي عَزْلِهِ مَصْلَحَةً لِلْأُمَّةِ؛ كَمَا فَعَلَ مَعَ خَالِدِ بْنِ الْوَلِيدِ رَضِيَ اللَّهُ عَنْهُمَا، فَقَبِلَ النَّاسُ
+              ذَلِكَ لِعِلْمِهِمْ بِحِكْمَتِهِ وَإِخْلَاصِهِ.
+            </p>
+          </div>
+
+          <!-- Highlighted quote & checklist -->
+          <div class="space-y-4">
+            <div class="quote-card p-5 sm:p-6">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="text-xl">❝</span>
+                <span class="text-xs uppercase tracking-[0.15em] text-slate-400">مبدأ في القيادة</span>
+              </div>
+              <p class="text-[0.95rem] leading-8 text-slate-50 mb-3">
+                «أَنَّ الْقِيَادَةَ الْحَقَّةَ لَا تَكُونُ إِلَّا بِالْإِيمَانِ وَالْحِكْمَةِ، وَأَنَّ رِضَا اللَّهِ فَوْقَ كُلِّ اعْتِبَارٍ».
+              </p>
+              <p class="text-[0.85rem] leading-7 text-slate-300">
+                أَثْبَتَتْ سِيرَتُهُ أَنَّ الْقَائِدَ إِذَا قَدَّمَ آخِرَتَهُ عَلَى دُنْيَاهُ، وَالْحَقَّ عَلَى الْهَوَى، صَارَ قُدْوَةً خَالِدَةً
+                فِي قُلُوبِ النَّاسِ مَهْمَا تَقَادَمَ الزَّمَانُ.
+              </p>
+            </div>
+
+            <div class="glass-card p-5 sm:p-5.5">
+              <h3 class="text-sm font-semibold text-slate-50 mb-2">ملامح قيادته رضي الله عنه</h3>
+              <ul class="space-y-2.5 text-[0.86rem] text-slate-200">
